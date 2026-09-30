@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="eS">
+<head>
+    <meta charset="UTF-8">
+    <title>Nébula - Regístrate</title>
+    <link href="./styles/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <nav>
+        <a class="logo">
+            <img src="./imgs/nebula-03.svg" alt="Logo Nébula Music">
+        </a>
+        <button class="menu-button"><img src="./imgs/menu.png" alt="menu icon" class="menu-icon"></button>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="about.html">Acerca de Nosotros</a>
+            </li>
+            <li>
+                <a href="iniciar-sesion.html">Iniciar sesión</a>
+            </li>
+            <li>
+                <a href="registro.html">Registro</a>
+            </li>
+        </ul>
+    </nav>
+
+<header class="principal">
+    <img src="./imgs/cover.jpg" alt="Cover Nébula, a series of albums on outer space">
+    <h1>Tu música en la nube y en tu espacio.</h1>
+
+</header>
+<main>
+    <h2>Regístrate</h2>
+    <form action="http://localhost:8080/api/registro" method="get">
+        <div>
+        <label for="txt_name">
+            Nombre:
+        </label>
+        <input
+                id="txt_name"
+                name="name"
+                type="text"
+                required
+                placeholder="Escriba su nombre completo">
+        </div>
+        <div>
+            <label for="txt_email">E-Mail</label>
+
+        <input
+                id="txt_email"
+            type="email"
+            required
+            placeholder="correo@mail.com"
+            name="email"
+        >
+        </div>
+        <div>
+        <label for="txt_dob" >Fecha de nacimiento:</label>
+        <input
+                type="date"
+                required
+                name="dob"
+                id="txt_dob"
+        >
+        </div>
+        <div>
+        <label for="txt_nickname">Nombre de usuario</label>
+        <input type="text"
+               required
+               id="txt_nickname"
+               name="nickname"
+        >
+        </div>
+        <label for="suscriptions-container">Elige tu suscripción</label>
+        <div id="suscriptions-container">
+            <input type="radio"
+                   value="basic"
+                   id="radio-basic"
+                   name="suscription">
+            <label for="radio-basic">Básico</label>
+            <input type="radio"
+                   value="premium"
+                   id="radio-premium"
+                   name="suscription">
+            <label for="radio-premium">Premium</label>
+            <input type="radio"
+                   value="family"
+                   id="radio-family"
+                   name="suscription">
+            <label for="radio-family">Familiar</label>
+        </div>
+
+        <div class="terms">
+            <label for="chk_terms">Acepto los términos y condiciones.</label>
+            <input name="tyc" id="chk_terms" type="checkbox">
+        </div>
+
+        <div class="options">
+            <button type="submit">Registrar</button>
+            <button type="reset">Cancelar</button>
+        </div>
+
+    </form>
+
+    <footer>
+        <p>Copyright Nébula 2026.</p>
+    </footer>
+
+</main>
+
+</body>
+</html>
